@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SearchNumber</string>
+    <string name="action_settings">Settings</string>
+    <string name="display">Display Number</string>
+    <string name="main_button1">変換</string>
+    
+    <string name="ncar_title">車種登録</string>
+    <string name="ncar_class">クラス：</string>
+    <string-array name="cl">
+        <item>K-A</item>
+        <item>K-B</item>
+        <item>S-H</item>
+        <item>S-S</item>
+        <item>S-A</item>
+        <item>S-W</item>
+        <item>S-B</item>
+        <item>S-C</item>
+        <item>S-D</item>
+        <item>E-H</item>
+        <item>E-S</item>
+        <item>E-A</item>
+        <item>E-W</item>
+        <item>E-B</item>
+        <item>W-H</item>
+        <item>W-A</item>
+        <item>W-S</item>
+        <item>W-B</item>
+        <item>W-C</item>
+        <item>J-C</item>
+        <item>J-W</item>
+        <item>V-A</item>
+        <item>T-H</item>
+        <item>T-S</item>
+        <item>T-C</item>
+        <item>D-H</item>
+        <item>D-B</item>
+        <item>D-D</item>
+    </string-array>
+    <string name="ncar_name">車種名：</string>
+    <string name="ncar_button">登録</string>
+    <string name="ncar_button2">キャンセル</string>
+    
+    <string name="scar_title">車種検索</string>
+    <string name="scar_class">クラス：</string>
+    <string name="scar_button">検索</string>
+    
+    <string name="acar_title">車両登録</string>
+
+</resources>
