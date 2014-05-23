@@ -30,11 +30,8 @@ public class SearchCar extends Activity{
 		Cursor cr = db.rawQuery(sql,null);
 		boolean eof = cr.moveToFirst();
 		String result = null;
-
-		System.out.println(cr);
 		while(eof){
-			result = result + cr.getString(1) + cr.getString(2);
-			System.out.println(result);
+			result = result + cr.getString(0) + cr.getString(1) + cr.getString(2) + "\n";
 			eof = cr.moveToNext();
 		}
 		cr.close();

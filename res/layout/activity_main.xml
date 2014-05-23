@@ -36,7 +36,7 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="@string/acar_title"
+        android:text="@string/nnum_title"
         android:onClick="switchAC" />
 
 </LinearLayout>

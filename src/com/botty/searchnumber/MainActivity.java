@@ -57,6 +57,11 @@ public class MainActivity extends Activity {
 		Intent vIntent = new Intent(this,SearchCar.class);
 		startActivity(vIntent);
 	}
+	public void switchAC(View v){
+		Intent vIntent = new Intent(this,NewNumber.class);
+		startActivity(vIntent);
+	}
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

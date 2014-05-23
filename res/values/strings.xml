@@ -46,6 +46,11 @@
     <string name="scar_class">クラス：</string>
     <string name="scar_button">検索</string>
     
-    <string name="acar_title">車両登録</string>
+    <string name="nnum_title">車両登録</string>
+    <string name="nnum_number">車両番号：</string>
+    <string name="nnum_class">クラス：</string>
+    <string name="nnum_cname">車種名：</string>
+    <string name="nnum_button1">登録</string>
+    
 
 </resources>

@@ -27,24 +27,27 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090006;
+        public static final int action_settings=0x7f090009;
         public static final int display=0x7f090000;
         public static final int display2=0x7f090001;
         public static final int ncar_name=0x7f090003;
-        public static final int scar_result=0x7f090005;
+        public static final int nnspinner1=0x7f090005;
+        public static final int nnspinner2=0x7f090006;
+        public static final int nnumber1=0x7f090004;
+        public static final int scar_result=0x7f090008;
         public static final int spinner1=0x7f090002;
-        public static final int spinner2=0x7f090004;
+        public static final int spinner2=0x7f090007;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int new_car=0x7f030001;
-        public static final int search_car=0x7f030002;
+        public static final int new_number=0x7f030002;
+        public static final int search_car=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int acar_title=0x7f05000c;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int display=0x7f050002;
@@ -54,6 +57,11 @@ public final class R {
         public static final int ncar_class=0x7f050005;
         public static final int ncar_name=0x7f050006;
         public static final int ncar_title=0x7f050004;
+        public static final int nnum_button1=0x7f050010;
+        public static final int nnum_class=0x7f05000e;
+        public static final int nnum_cname=0x7f05000f;
+        public static final int nnum_number=0x7f05000d;
+        public static final int nnum_title=0x7f05000c;
         public static final int scar_button=0x7f05000b;
         public static final int scar_class=0x7f05000a;
         public static final int scar_title=0x7f050009;

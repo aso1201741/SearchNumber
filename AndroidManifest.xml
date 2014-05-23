@@ -30,6 +30,10 @@
             android:name="com.botty.searchnumber.SearchCar"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.botty.searchnumber.NewNumber"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
