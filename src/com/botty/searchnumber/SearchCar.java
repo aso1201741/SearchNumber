@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Spinner;
-import android.widget.EditText;
 import android.widget.TextView;
 
 

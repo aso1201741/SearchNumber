@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.content.Intent;
+import android.database.Cursor;
 
 
 public class MainActivity extends Activity {
@@ -20,12 +21,15 @@ public class MainActivity extends Activity {
 	public void SwitchTranslate(View v){
 		EditText et = (EditText)findViewById(R.id.display);
 		TextView tv = (TextView)findViewById(R.id.display2);
+		TextView tv2 = (TextView)findViewById(R.id.display3);
+		
 		String s = et.getText().toString();
 		String a = s.substring(0, 3);
 		String b = s.substring(3, 6);
 		String c = s.substring(6, 8);
 		String d = s.substring(8);
 		String result = null;
+		String result2 = null;
 		
 		switch(Integer.parseInt(a)){
 		case 911: a = "福岡"; break;
@@ -45,8 +49,20 @@ public class MainActivity extends Activity {
 			result = "県ナンバーが不正です。";
 		}else{
 			result = a + b + " わ " + c + " - " + d;
+			DBAccess da = new DBAccess(this);
+			android.database.sqlite.SQLiteDatabase db = da.getReadableDatabase();
+			String sql = "SELECT * FROM cdata WHERE id = '" + et.getText().toString() + "'";
+			Cursor cr = db.rawQuery(sql,null);
+			boolean eof = cr.moveToFirst();
+			while(eof){
+				result2 = cr.getString(1) + cr.getString(2);
+				eof = cr.moveToNext();
+			}
+			cr.close();
+			db.close();
 		}
 		tv.setText(result);
+		tv2.setText(result2);
 	}
 	
 	public void switchNC(View v){

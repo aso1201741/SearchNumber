@@ -11,6 +11,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:textSize="12pt" />
+    
     <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -22,6 +23,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="12pt" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12pt"
+        android:id="@+id/display3" />
     
     <Button
         android:layout_width="250dp"

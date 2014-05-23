@@ -10,7 +10,9 @@ public class DBAccess extends SQLiteOpenHelper{
 	}
 	@Override
 	public void onCreate(SQLiteDatabase arg0){
-		String sql = "CREATE TABLE cname(id integer primary key, cl text, name text);";
+		String sql = "CREATE TABLE cname(id integer primary key, number text, cl text, name text);";
+		arg0.execSQL(sql);
+		sql = "CREATE TABLE cdata(id integer primary key, cl text, name text);";
 		arg0.execSQL(sql);
 	}
 	@Override
