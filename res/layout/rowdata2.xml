@@ -4,4 +4,5 @@
         android:id="@+id/rowd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="10pt"
         android:padding="5dp" />

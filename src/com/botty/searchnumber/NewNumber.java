@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.EditText;
-
+import android.content.Intent;
 
 public class NewNumber extends Activity{
 
@@ -17,6 +17,9 @@ public class NewNumber extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.new_number);
+		Intent vIntent = getIntent();
+		String num = vIntent.getStringExtra("NUM");
+		((EditText)findViewById(R.id.nnumber1)).setText(num);
 		Spinner vspinner = (Spinner)findViewById(R.id.nnspinner1);
 		System.out.println("**********************");
 		vspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){

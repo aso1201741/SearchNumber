@@ -2,9 +2,7 @@ package com.botty.searchnumber;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.content.Intent;
 import android.database.Cursor;
@@ -19,7 +17,7 @@ public class MainActivity extends Activity {
 	}
 	
 	public void SwitchTranslate(View v){
-		EditText et = (EditText)findViewById(R.id.display);
+		TextView et = (TextView)findViewById(R.id.display);
 		TextView tv = (TextView)findViewById(R.id.display2);
 		TextView tv2 = (TextView)findViewById(R.id.display3);
 		
@@ -65,25 +63,75 @@ public class MainActivity extends Activity {
 		tv2.setText(result2);
 	}
 	
-	public void switchNC(View v){
-		Intent vIntent = new Intent(this,NewCar.class);
-		startActivity(vIntent);
-	}
 	public void switchSC(View v){
 		Intent vIntent = new Intent(this,SearchCar.class);
 		startActivity(vIntent);
 	}
 	public void switchAC(View v){
+		String s = ((TextView)findViewById(R.id.display)).getText().toString();
+		int x = s.length();
 		Intent vIntent = new Intent(this,NewNumber.class);
+		if(x == 10){
+			vIntent.putExtra("NUM", s);
+		}
+		startActivity(vIntent);
+	}
+	public void switchSN(View v){
+		Intent vIntent = new Intent(this,SearchNumber.class);
 		startActivity(vIntent);
 	}
 	
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
+	public void switch1(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "1");
 	}
-
+	public void switch2(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "2");
+	}
+	public void switch3(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "3");
+	}
+	public void switch4(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "4");
+	}
+	public void switch5(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "5");
+	}
+	public void switch6(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "6");
+	}
+	public void switch7(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "7");
+	}
+	public void switch8(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "8");
+	}
+	public void switch9(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "9");
+	}
+	public void switch0(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		et.setText(et.getText() + "0");
+	}
+	public void switchBS(View v){
+		TextView et = (TextView)findViewById(R.id.display);
+		String s = et.getText().toString();
+		if(et.length() != 0){
+			et.setText(s.substring(0,s.length() - 1));
+		}
+	}
+	public void switchEnter(View v){
+		int x = ((TextView)findViewById(R.id.display)).getText().toString().length();
+		if(x == 10){
+			this.SwitchTranslate(v);
+		}
+	}
 }

@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/scar_title"
+        android:text="@string/snum_title"
         android:textSize="12pt" />
     <LinearLayout
         android:layout_width="250dp"
@@ -16,22 +16,22 @@
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
-	        android:text="@string/scar_class" />
+	        android:text="@string/snum_class" />
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/snspinner1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:entries="@array/cl" />
     </LinearLayout>
     <Button 
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="@string/scar_button"
+        android:text="@string/snum_button"
         android:onClick="switchS" />
         <ListView
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:id="@+id/scar_result" />
+            android:id="@+id/snum_result" />
 
 </LinearLayout>

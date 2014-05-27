@@ -2,21 +2,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context=".MainActivity" >
-
-    <EditText
+    <TextView
         android:id="@+id/display"
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="12pt" />
     
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="@string/main_button1"
-        android:onClick="SwitchTranslate" />
     <TextView
         android:id="@+id/display2"
         android:layout_width="wrap_content"
@@ -30,20 +27,111 @@
         android:textSize="12pt"
         android:id="@+id/display3" />
     
-    <Button
-        android:layout_width="250dp"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ncar_title"
-        android:onClick="switchNC" />
-    <Button
-        android:layout_width="250dp"
+        android:stretchColumns="0,1,2" >
+        <TableRow>
+            <Button
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/scar_title"
+		        android:onClick="switchSC" />
+            <Button
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/nnum_title"
+		        android:onClick="switchAC" />
+		    <Button
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/snum_title"
+		        android:onClick="switchSN" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/scar_title"
-        android:onClick="switchSC" />
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="@string/nnum_title"
-        android:onClick="switchAC" />
-
+        android:stretchColumns="0,1,2" >
+        <TableRow>
+            <Button
+                android:id="@+id/n1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n1"
+                android:onClick="switch1" />
+            <Button
+                android:id="@+id/n2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n2"
+                android:onClick="switch2" />
+            <Button
+                android:id="@+id/n3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n3"
+                android:onClick="switch3" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/n4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n4"
+                android:onClick="switch4" />
+            <Button
+                android:id="@+id/n5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n5"
+                android:onClick="switch5" />
+            <Button
+                android:id="@+id/n6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n6"
+                android:onClick="switch6" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/n7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n7"
+                android:onClick="switch7" />
+            <Button
+                android:id="@+id/n8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n8"
+                android:onClick="switch8" />
+            <Button
+                android:id="@+id/n9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n9"
+                android:onClick="switch9" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_BS"
+                android:onClick="switchBS" />
+            <Button
+                android:id="@+id/n0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_n0"
+                android:onClick="switch0" />
+            <Button
+                android:id="@+id/enter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_Enter"
+                android:onClick="switchEnter" />
+        </TableRow>
+    </TableLayout>
 </LinearLayout>

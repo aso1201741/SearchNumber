@@ -5,6 +5,18 @@
     <string name="action_settings">Settings</string>
     <string name="display">Display Number</string>
     <string name="main_button1">変換</string>
+    <string name="main_n1">1</string>
+    <string name="main_n2">2</string>
+    <string name="main_n3">3</string>
+    <string name="main_n4">4</string>
+    <string name="main_n5">5</string>
+    <string name="main_n6">6</string>
+    <string name="main_n7">7</string>
+    <string name="main_n8">8</string>
+    <string name="main_n9">9</string>
+    <string name="main_n0">0</string>
+    <string name="main_BS">BS</string>
+    <string name="main_Enter">Enter</string>
     
     <string name="ncar_title">車種登録</string>
     <string name="ncar_class">クラス：</string>
@@ -51,6 +63,10 @@
     <string name="nnum_class">クラス：</string>
     <string name="nnum_cname">車種名：</string>
     <string name="nnum_button1">登録</string>
+    
+    <string name="snum_title">車両一覧</string>
+    <string name="snum_class">クラス：</string>
+    <string name="snum_button">検索</string>
     
 
 </resources>
