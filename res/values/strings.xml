@@ -17,6 +17,7 @@
     <string name="main_n0">0</string>
     <string name="main_BS">BS</string>
     <string name="main_Enter">Enter</string>
+    <string name="main_clear">Clear</string>
     
     <string name="ncar_title">車種登録</string>
     <string name="ncar_class">クラス：</string>

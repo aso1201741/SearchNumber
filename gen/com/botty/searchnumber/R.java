@@ -73,6 +73,7 @@ public final class R {
         public static final int main_BS=0x7f05000e;
         public static final int main_Enter=0x7f05000f;
         public static final int main_button1=0x7f050003;
+        public static final int main_clear=0x7f050010;
         public static final int main_n0=0x7f05000d;
         public static final int main_n1=0x7f050004;
         public static final int main_n2=0x7f050005;
@@ -83,22 +84,22 @@ public final class R {
         public static final int main_n7=0x7f05000a;
         public static final int main_n8=0x7f05000b;
         public static final int main_n9=0x7f05000c;
-        public static final int ncar_button=0x7f050013;
-        public static final int ncar_button2=0x7f050014;
-        public static final int ncar_class=0x7f050011;
-        public static final int ncar_name=0x7f050012;
-        public static final int ncar_title=0x7f050010;
-        public static final int nnum_button1=0x7f05001c;
-        public static final int nnum_class=0x7f05001a;
-        public static final int nnum_cname=0x7f05001b;
-        public static final int nnum_number=0x7f050019;
-        public static final int nnum_title=0x7f050018;
-        public static final int scar_button=0x7f050017;
-        public static final int scar_class=0x7f050016;
-        public static final int scar_title=0x7f050015;
-        public static final int snum_button=0x7f05001f;
-        public static final int snum_class=0x7f05001e;
-        public static final int snum_title=0x7f05001d;
+        public static final int ncar_button=0x7f050014;
+        public static final int ncar_button2=0x7f050015;
+        public static final int ncar_class=0x7f050012;
+        public static final int ncar_name=0x7f050013;
+        public static final int ncar_title=0x7f050011;
+        public static final int nnum_button1=0x7f05001d;
+        public static final int nnum_class=0x7f05001b;
+        public static final int nnum_cname=0x7f05001c;
+        public static final int nnum_number=0x7f05001a;
+        public static final int nnum_title=0x7f050019;
+        public static final int scar_button=0x7f050018;
+        public static final int scar_class=0x7f050017;
+        public static final int scar_title=0x7f050016;
+        public static final int snum_button=0x7f050020;
+        public static final int snum_class=0x7f05001f;
+        public static final int snum_title=0x7f05001e;
     }
     public static final class style {
         /** 

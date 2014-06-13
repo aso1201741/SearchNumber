@@ -134,4 +134,7 @@ public class MainActivity extends Activity {
 			this.SwitchTranslate(v);
 		}
 	}
+	public void switchClear(View v){
+		((TextView)findViewById(R.id.display)).setText("");
+	}
 }
